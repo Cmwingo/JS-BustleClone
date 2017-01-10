@@ -2,6 +2,8 @@
 
 <ul>
   {{#each model as |story|}}
-     <li>{{story.headline}} by {{story.author}}</li>
+     <li>
+       {{#link-to 'story' story.id}}{{story.headline}} by {{story.author}}{{/link-to}}
+     </li>
   {{/each}}
 </ul>
