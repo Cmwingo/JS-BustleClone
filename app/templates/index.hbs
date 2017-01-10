@@ -1,3 +1,7 @@
 <h1>Top Stories</h1>
 
-<p>Stories coming soon...</p>
+<ul>
+  {{#each model as |story|}}
+     <li>{{story.headline}} by {{story.author}}</li>
+  {{/each}}
+</ul>
