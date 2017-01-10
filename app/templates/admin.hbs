@@ -1,0 +1,9 @@
+<h1>Administration</h1>
+
+<ul>
+  {{#each model as |story|}}
+    {{story-tile story=story destroyStory="destroyStory"}}
+  {{/each}}
+</ul>
+
+{{new-story saveStory="saveStory"}}
