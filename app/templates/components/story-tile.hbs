@@ -1,4 +1,5 @@
 <li>
   {{story.headline}} by {{story.author}}
+  {{update-story story=story update="update"}}
   <button {{action 'delete' story}}>Delete</button>
 </li>

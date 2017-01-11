@@ -12,7 +12,7 @@ export default Ember.Component.extend({
         author: this.get('author') ? this.get('author') : "",
         headline: this.get('headline') ? this.get('headline') : "",
         image: this.get('image') ? this.get('image') : "",
-        story: this.get('story') ? this.get('story') : "",
+        storyText: this.get('storyText') ? this.get('storyText') : "",
       };
       this.set('addNewStory', false);
       this.sendAction('saveStory', params);

@@ -4,5 +4,5 @@ export default DS.Model.extend({
   author: DS.attr(),
   headline: DS.attr(),
   image: DS.attr(),
-  story: DS.attr()
+  storyText: DS.attr()
 });
